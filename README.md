@@ -3,14 +3,15 @@
 ## 实践
 
    1. 创建 `.proto` 文件 [person.proto](person.proto)
-   2. 生成类库 
+   2. 安装php扩展 `pecl install protobuf`
+   3. 生成类库 
       - 需要手动创建存放类库的目录 `mkdir ./src`
       - `protoc --php_out=./src person.proto`
-   3. composer 安装 protobuf 扩展
+   4. composer 安装 protobuf 扩展
       - `composer require google/protobuf -vvv`
-   4. 编写php代码
+   5. 编写php代码
       - [example.php](example.php)
-   5. 运行代码查看效果
+   6. 运行代码查看效果
 
 ## 总结
 
