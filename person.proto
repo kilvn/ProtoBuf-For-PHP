@@ -2,8 +2,11 @@ syntax="proto3";
 
 package test;
 
+// 需要目录的配置如下，生成的目录为  proto/project1/GPBMetadata
+option php_metadata_namespace = "project1/GPBMetadata";
+
 message Person{
-    string name=1;//姓名
-    int32  age=2;//年龄
-    int32  sex=3;//性别
+    string name=1; //姓名
+    int32  age=2;  //年龄
+    int32  sex=3;  //性别
 }
